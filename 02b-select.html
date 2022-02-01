@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="hej.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Titel</h1>
+    </header>
+    <hr />
+    <main>
+      <h2>Undertitel</h2>
+      <section class="section1">
+        <article>
+          <img src="/placeimg_640_480_any.jpg" alt="width 500" />
+
+          <h3>Article 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            illo quisquam possimus, ex magnam accusantium repellendus delectus
+            excepturi nisi similique fugit modi dolorum explicabo, saepe omnis,
+            tempore quia neque? Delectus.
+          </p>
+        </article>
+
+        <article>
+          <img src="/placeimg_640_480_any.jpg" alt="width 500" />
+
+          <h3>Article 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            illo quisquam possimus, ex magnam accusantium repellendus delectus
+            excepturi nisi similique fugit modi dolorum explicabo, saepe omnis,
+            tempore quia neque? Delectus.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      This is the footer
+      <hr />
+    </footer>
+    <script>
+      const header = document.querySelector("header h1");
+      console.log(header);
+      header.textContent = "noget helt andet";
+      header.innerHTML = "<h1>Noget nyt og anderledes</h1>";
+
+      const h2 = document.querySelector("h2");
+      console.log(h2);
+
+      const h31 = document.querySelector("article:first-child h3");
+      console.log(h31);
+      h31.textContent = "noget helt andet";
+      h31.innerHTML = "<h1>Noget nyt og anderledes</h1>";
+
+      const h32 = document.querySelector("article:nth-child(2) h3");
+      console.log(h32);
+      h32.textContent = "noget helt andet";
+      h32.innerHTML = "<h1>Noget nyt og anderledes</h1>";
+
+      const articlep = document.querySelector("article:first-child p");
+      console.log(articlep);
+      articlep.textContent = "noget helt andet";
+      articlep.innerHTML = "<h1>Noget nyt og anderledes</h1>";
+
+      const articlep2 = document.querySelector("article:nth-child(2) p");
+      console.log(articlep2);
+      articlep2.textContent = "noget helt andet";
+      articlep2.innerHTML = "<h1>Noget nyt og anderledes</h1>";
+
+      const articleimg = document.querySelector("article:first-child img");
+      console.log(articleimg);
+
+      const articleimg2 = document.querySelector("article:nth-child(2) img");
+      console.log(articleimg2);
+
+      const footer = document.querySelector("footer");
+      console.log(footer);
+    </script>
+  </body>
+</html>
