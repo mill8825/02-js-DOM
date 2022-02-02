@@ -16,15 +16,17 @@
       <h2>Undertitel</h2>
       <section class="section1">
         <article>
-          <img src="https://placeimg.com/400/300/animals" alt="width 500" />
+          <div class="img1">
+            <img src="https://placeimg.com/400/300/animals" alt="width 500" />
 
-          <h3>Article 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            illo quisquam possimus, ex magnam accusantium repellendus delectus
-            excepturi nisi similique fugit modi dolorum explicabo, saepe omnis,
-            tempore quia neque? Delectus.
-          </p>
+            <h3>Article 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              illo quisquam possimus, ex magnam accusantium repellendus delectus
+              excepturi nisi similique fugit modi dolorum explicabo, saepe
+              omnis, tempore quia neque? Delectus.
+            </p>
+          </div>
         </article>
 
         <article>
@@ -116,6 +118,17 @@
       pnew.appendChild(tekst);
       mainSection.appendChild(tekst);
       console.log(tekst);
+
+      document.addEventListener("DOMContentLoaded", start);
+      console.log("Hej");
+      function start() {}
+
+      //   Her ændrer jeg billede 1 når jeg klikker på det. Media bruges til medier som f.eks. billeder, mp3 osv.
+      // Math.random bruges til at vælge et tilfældigt billede fra placeimg siden som vi har indsat nedenunder.
+      pic1.addEventListener("mousedown", media);
+      function media() {
+        pic1.src = "https://placeimg.com/400/300/arch?t=" + Math.random() * 20;
+      }
     </script>
   </body>
 </html>
